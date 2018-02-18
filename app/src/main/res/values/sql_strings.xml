@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="CREATE_FRIENDS_SQL">
+        CREATE TABLE IF NOT EXISTS friends(email TEXT PRIMARY KEY, username TEXT, available TEXT)
+    </string>
+
+    <string name="CREATE_GROUPS_SQL">
+        CREATE TABLE IF NOT EXISTS groups(groupid TEXT PRIMARY KEY, facilitator TEXT)
+    </string>
+
+    <string name="DROP_FRIENDS_SQL">
+        DROP TABLE IF EXISTS friends
+    </string>
+
+    <string name="DROP_GROUPS_SQL">
+        DROP TABLE IF EXISTS groups
+    </string>
+
+</resources>

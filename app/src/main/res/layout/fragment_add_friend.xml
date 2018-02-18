@@ -1,0 +1,16 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_add_friend"
+    tools:context="team16.uw.tacoma.edu.thefriendzone.friend.AddFriendFragment">
+
+    <EditText
+        android:id="@+id/add_friend_id_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_friend_id" />
+
+</LinearLayout>

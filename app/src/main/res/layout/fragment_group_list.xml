@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list_group"
+        android:name="team16.uw.tacoma.edu.thefriendzone.GroupFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="team16.uw.tacoma.edu.thefriendzone.group.GroupListFragment"
+        tools:listitem="@layout/fragment_group_list_item"
+
+        android:paddingBottom="55dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linear_group_add"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/group_add_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Group"/>
+    </LinearLayout>
+
+</RelativeLayout>

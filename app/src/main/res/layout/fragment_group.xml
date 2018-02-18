@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list_group_details"
+        android:name="team16.uw.tacoma.edu.thefriendzone.group.GroupDetailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="team16.uw.tacoma.edu.thefriendzone.group.GroupFragment"
+        tools:listitem="@layout/fragment_member_item" />
+
+    <LinearLayout
+        android:id="@+id/linear_group_member_add"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/group_member_add_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Group Member"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/group_delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Group"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+</RelativeLayout>
